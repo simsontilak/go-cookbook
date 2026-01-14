@@ -20,4 +20,8 @@ func main() {
 	io.DisplayMainHeading("Arrays")
 	datastructures.ArrayPrintDemo()
 	io.LineSeparator()
+
+	io.DisplayMainHeading("Slices")
+	datastructures.DemoSliceOp()
+	io.LineSeparator()
 }
