@@ -24,4 +24,8 @@ func main() {
 	io.DisplayMainHeading("Slices")
 	datastructures.DemoSliceOp()
 	io.LineSeparator()
+
+	io.DisplayMainHeading("Slices Operation")
+	datastructures.DemoSlicingSlice()
+	io.LineSeparator()
 }
