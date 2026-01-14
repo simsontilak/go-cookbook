@@ -11,4 +11,4 @@ run: vet
 	go run ./go-cookbook.go
 
 build: vet
-	go build -o bin
+	go build -o bin/go-cookbook
