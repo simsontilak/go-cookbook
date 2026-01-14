@@ -28,4 +28,12 @@ func main() {
 	io.DisplayMainHeading("Slices Operation")
 	datastructures.DemoSlicingSlice()
 	io.LineSeparator()
+
+	io.DisplayMainHeading("Map Uniform Algorithm")
+	datastructures.DemoMapUniform()
+	io.LineSeparator()
+
+	io.DisplayMainHeading("Map Normal Algorithm")
+	datastructures.DemoMapNormal()
+	io.LineSeparator()
 }
