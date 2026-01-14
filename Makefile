@@ -8,7 +8,7 @@ vet: fmt
 	go vet ./...
 
 run: vet
-	go run basic_io.go
+	go run ./go-cookbook.go
 
 build: vet
-	go build
+	go build -o bin

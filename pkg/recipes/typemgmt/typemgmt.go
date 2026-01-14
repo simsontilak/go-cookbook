@@ -1,20 +1,11 @@
-package main
+package typemgmt
 
 import (
 	"fmt"
 	"math/cmplx"
 )
 
-func main() {
-	fmt.Printf("\n========================\n")
-	fmt.Printf("\nHere is a list of Demos:\n")
-	fmt.Printf("\n========================\n")
-	demoComplex()
-	demoTypeConversion()
-}
-
-func demoTypeConversion() {
-	fmt.Printf("\nDemo of type conversion: \n")
+func DemoTypeConversion() {
 	var x int = 10
 	var y float64 = 44.5324
 	var sum1 float64 = float64(x) + y
@@ -27,8 +18,7 @@ func demoTypeConversion() {
 	fmt.Println("Sum3 = ", sum3, "Sum4 = ", sum4)
 }
 
-func demoComplex() {
-	fmt.Printf("\nDemo of complex numbers: \n")
+func DemoComplex() {
 	first := complex(4.2, 3.3)
 	second := complex(5.3, 2.2)
 
