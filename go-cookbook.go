@@ -7,33 +7,21 @@ import (
 )
 
 func main() {
+	type demoFunctions func()
+	givenFunctions := []demoFunctions{
+		typemgmt.DemoTypeConversion,
+		typemgmt.DemoComplex,
+		datastructures.ArrayPrintDemo,
+		datastructures.DemoSliceOp,
+		datastructures.DemoSlicingSlice,
+		datastructures.DemoMapUniform,
+		datastructures.DemoMapNormal,
+	}
+
 	io.DisplayMainHeading("Cookbook Demo")
-
-	io.DisplaySubHeading("Type Conversion")
-	typemgmt.DemoTypeConversion()
-	io.LineSeparator()
-
-	io.DisplaySubHeading("Complex Type")
-	typemgmt.DemoComplex()
-	io.LineSeparator()
-
-	io.DisplayMainHeading("Arrays")
-	datastructures.ArrayPrintDemo()
-	io.LineSeparator()
-
-	io.DisplayMainHeading("Slices")
-	datastructures.DemoSliceOp()
-	io.LineSeparator()
-
-	io.DisplayMainHeading("Slices Operation")
-	datastructures.DemoSlicingSlice()
-	io.LineSeparator()
-
-	io.DisplayMainHeading("Map Uniform Algorithm")
-	datastructures.DemoMapUniform()
-	io.LineSeparator()
-
-	io.DisplayMainHeading("Map Normal Algorithm")
-	datastructures.DemoMapNormal()
-	io.LineSeparator()
+	for _, operation := range givenFunctions {
+		io.DisplayRunHeading(operation)
+		operation()
+		io.LineSeparator()
+	}
 }
