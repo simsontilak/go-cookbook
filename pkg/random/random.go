@@ -27,7 +27,7 @@ func RandomRangeNormal(min int, max int) int {
 		mean := float64(min+max) / 2.0
 		std := 2.5
 
-		scaled := normalFloat*std + mean
+		scaled := normalFloat * std + mean
 
 		result := int(math.Round(scaled))
 
